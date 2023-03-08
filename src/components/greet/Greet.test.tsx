@@ -11,6 +11,9 @@ test("Greet render correctly", () => {
   expect(greetElement).toBeInTheDocument();
 });
 
+// test.only
+// test.skip
+
 test("Greet render correctly with name", () => {
   render(<Greet name="Hamim" />);
   const greetElement = screen.getByText(/hello Hamim/i);
