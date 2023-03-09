@@ -5,17 +5,21 @@
 import { render, screen } from "@testing-library/react";
 import Greet from "./Greet";
 
-test("Greet render correctly", () => {
-  render(<Greet />);
-  const greetElement = screen.getByText(/hello/i);
-  expect(greetElement).toBeInTheDocument();
-});
+describe("Greet", () => {
+  test("render correctly", () => {
+    render(<Greet />);
+    const greetElement = screen.getByText(/hello/i);
+    expect(greetElement).toBeInTheDocument();
+  });
 
-// test.only
-// test.skip
+  // test.only
+  // test.skip
 
-test("Greet render correctly with name", () => {
-  render(<Greet name="Hamim" />);
-  const greetElement = screen.getByText(/hello Hamim/i);
-  expect(greetElement).toBeInTheDocument();
+  // describe("Nested", () => {
+  //   test("render correctly with name", () => {
+  //     render(<Greet name="Hamim" />);
+  //     const greetElement = screen.getByText(/hello Hamim/i);
+  //     expect(greetElement).toBeInTheDocument();
+  //   });
+  // });
 });
