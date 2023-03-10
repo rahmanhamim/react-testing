@@ -6,10 +6,20 @@ const Application = () => {
       <h1>Job application form</h1>
       <h2>Section 1</h2>
       <p>All fields are mandatory</p>
+      <img
+        src="https://images.pexels.com/photos/6446685/pexels-photo-6446685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="a laptop on the table"
+      />
       <form action="">
         <div>
           <label htmlFor="name">Name</label>
-          <input type="text" id="name" placeholder="fullName" />
+          <input
+            type="text"
+            id="name"
+            placeholder="fullName"
+            value="Hamim"
+            onChange={() => {}}
+          />
         </div>
         <div>
           <label htmlFor="bio">Bio</label>
