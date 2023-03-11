@@ -6,10 +6,12 @@ const Application = () => {
       <h1>Job application form</h1>
       <h2>Section 1</h2>
       <p>All fields are mandatory</p>
+      <span title="close">X</span>
       <img
         src="https://images.pexels.com/photos/6446685/pexels-photo-6446685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         alt="a laptop on the table"
       />
+      <div data-testid="custom-element">Custom HTML element</div>
       <form action="">
         <div>
           <label htmlFor="name">Name</label>
